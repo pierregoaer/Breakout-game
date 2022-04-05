@@ -12,9 +12,9 @@ class BrickManager(Turtle):
 
     def create_bricks(self):
         x_pos = - SCREEN_WIDTH / 2 + 40
-        for _ in range(18):
+        for _ in range(15):
             y_pos = SCREEN_HEIGHT / 2 - 30
-            for row in range(5):
+            for row in range(8):
                 new_brick = Turtle(shape="square")
                 new_brick.color(row_colours[row])
                 new_brick.shapesize(stretch_wid=1, stretch_len=3, outline=1)
